@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char user[50], pass[50];
+
+    printf("Enter your username:\n");
+    scanf("%s",&user);
+    printf("Enter your password:\n");
+    scanf("%s",&pass);
+    
+    users(user, pass);
+    
+    return 0;
+}
+
+int users(const char* user, const char* pass){	
+	if((strcmp(user,"admin")==0 && strcmp(pass,"1234")==0)){
+		printf("\nACCESS GRANTED WELCOME admin");
+	} else if((strcmp(user,"user")==0 && strcmp(pass,"4567")==0)){
+		printf("\nACCESS GRANTED WELCOME user");
+	} else if((strcmp(user,"guest")==0 && strcmp(pass,"7890")==0)){
+		printf("\nACCESS GRANTED WELCOME guest");
+	} else {
+		printf("\nPASSWORD AND USERNAME IS INCORRECT.");
+	}
+}
