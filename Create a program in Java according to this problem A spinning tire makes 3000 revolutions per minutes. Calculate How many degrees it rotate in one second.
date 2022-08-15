@@ -1,0 +1,8 @@
+public class Main {
+	public static void main(String[] args) {
+		
+		System.out.print("Degrees Rotated In One Seconds Is:");
+
+System.out.println((3000/60)*360);
+	}
+}
